@@ -34,7 +34,7 @@ def getWeather():
         name.config(text="CURRENT WEATHER")
 
         # Weather
-        api = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid=79eb1e87bb2c009c94d2066e9c238087"
+        api = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid=(API__ID)" 
         response = requests.get(api)
         if response.status_code != 200:
             raise ValueError("Weather data not found")
